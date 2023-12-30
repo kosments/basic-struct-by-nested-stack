@@ -1,10 +1,6 @@
 # Build WebApServer and DBServer using CloudFormation's NestedStack
 
-## Diagram
-
-```bash
-![](./diagram/basic-struct-by-nested-stack.svg)
-```
+## Diagram![img](./diagram/basic-struct-by-nested-stack.svg)
 
 ## Construction steps
 
