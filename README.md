@@ -1,5 +1,11 @@
 # Build WebApServer and DBServer using CloudFormation's NestedStack
 
+## Diagram
+
+```bash
+![](./diagram/basic-struct-by-nested-stack.svg)
+```
+
 ## Construction steps
 
 - Create an S3 bucket
@@ -13,5 +19,5 @@
   - Refresh the page several times to ensure that the EC2 index.php for each availability zone is displayed.
 - Select the connection from the created EC2 console and use the session manager to confirm that you can access RDS
   - Copy the endpoint name from the RDS console
-    - mariadb -h [dev-test-project-db.cx408wcx1k7o.ap-northeast-1.rds.amazonaws.com](http://dev-test-project-db.cx408wcx1k7o.ap-northeast-1.rds.amazonaws.com/) -P 3306 -u admin -p
+    - mariadb -h dev-test-project-db.example.ap-northeast-1.rds.amazonaws.com -P 3306 -u admin -p
     - Check the same from the other EC2
